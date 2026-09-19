@@ -1,17 +1,19 @@
-NEOMATH.IN - SIMPLE GITHUB PAGES WEBSITE
+NEOMATH.IN V2
 
-1. Create a GitHub repository.
-2. Upload all files in this folder.
-3. In GitHub, open Settings > Pages.
-4. Choose Deploy from a branch.
-5. Select the main branch and root folder.
-6. Save.
+FOLDERS
+class8/ = all Class 8 content
+class9/ = all Class 9 content
+class10/ = all Class 10 content
+blogs/ = blog home and all blog articles
+templates/ = reusable chapter and blog templates
 
-HOW TO UPDATE:
-- Change video links and e-book links in data.js.
-- Change text directly in the relevant HTML page.
-- To add a new blog, copy blog-example.html, rename it, and edit the text.
-- To add a new chapter, copy chapter8.html, chapter9.html, or chapter10.html, rename it, and edit the text.
-- Add a link to the new page from the relevant class or blog page.
+EASIEST UPDATES
+1. YouTube videos: edit data.js. Add a copied video line. youtube.html updates automatically.
+2. E-books: edit data.js. Add a copied ebook line.
+3. New chapter: copy templates/chapter-template.html into the correct class folder, rename it, edit it, then add one link/card to that class index.html.
+4. New blog: copy templates/blog-template.html into blogs/, rename it, edit it, then add one link/card to blogs/index.html.
 
-Replace all sample YouTube, PDF, and Google Form links with your real links.
+No database, Node, React, npm or server is needed. This is a simple static GitHub Pages site.
+
+GITHUB PAGES
+Create a repository, upload all files, then Settings > Pages > Deploy from a branch > main > root > Save.
